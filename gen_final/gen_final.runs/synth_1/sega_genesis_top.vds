@@ -1,0 +1,2038 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Dec  4 19:15:20 2016
+# Process ID: 18701
+# Log file: /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/sega_genesis_top.vds
+# Journal file: /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sega_genesis_top.tcl -notrace
+Command: synth_design -top sega_genesis_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2016.07' and will expire in -126 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+WARNING: [Synth 8-2611] redeclaration of ansi port as is not allowed [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:35]
+WARNING: [Synth 8-976] as has already been declared [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:35]
+WARNING: [Synth 8-2654] second declaration of as ignored [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:35]
+INFO: [Synth 8-994] as is declared here [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:27]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1073.852 ; gain = 164.551 ; free physical = 7187 ; free virtual = 18908
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sega_genesis_top' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:1]
+INFO: [Synth 8-638] synthesizing module 'ROM_Handler_Top_wrapper' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/bd/ROM_Handler_Top/hdl/ROM_Handler_Top_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'ROM_Handler_Top' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/bd/ROM_Handler_Top/hdl/ROM_Handler_Top.v:13]
+INFO: [Synth 8-638] synthesizing module 'ROM_Handler' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ROM_Handler' (1#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/new/ROM_Handler.v:23]
+INFO: [Synth 8-638] synthesizing module 'Game_ROM' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/Game_ROM_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'Game_ROM' (2#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/Game_ROM_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'ROM_Handler_Top' (3#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/bd/ROM_Handler_Top/hdl/ROM_Handler_Top.v:13]
+INFO: [Synth 8-256] done synthesizing module 'ROM_Handler_Top_wrapper' (4#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/ROM/ROM_Handler/ROM_Handler.srcs/sources_1/bd/ROM_Handler_Top/hdl/ROM_Handler_Top_wrapper.v:12]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (24) of module 'ROM_Handler_Top_wrapper' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:61]
+WARNING: [Synth 8-350] instance 'rom' of module 'ROM_Handler_Top_wrapper' requires 6 connections, but only 5 given [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:61]
+INFO: [Synth 8-638] synthesizing module 'z80_top_direct_n' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/z80_top_direct_n.v:19]
+INFO: [Synth 8-638] synthesizing module 'clk_delay' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/clk_delay.v:32]
+INFO: [Synth 8-256] done synthesizing module 'clk_delay' (5#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/clk_delay.v:32]
+INFO: [Synth 8-638] synthesizing module 'decode_state' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/decode_state.v:32]
+INFO: [Synth 8-256] done synthesizing module 'decode_state' (6#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/decode_state.v:32]
+INFO: [Synth 8-638] synthesizing module 'execute' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/execute.v:38]
+INFO: [Synth 8-256] done synthesizing module 'execute' (7#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/execute.v:38]
+INFO: [Synth 8-638] synthesizing module 'interrupts' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/interrupts.v:32]
+INFO: [Synth 8-256] done synthesizing module 'interrupts' (8#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/interrupts.v:32]
+INFO: [Synth 8-638] synthesizing module 'ir' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/ir.v:32]
+INFO: [Synth 8-256] done synthesizing module 'ir' (9#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/ir.v:32]
+INFO: [Synth 8-638] synthesizing module 'pin_control' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/pin_control.v:32]
+INFO: [Synth 8-256] done synthesizing module 'pin_control' (10#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/pin_control.v:32]
+INFO: [Synth 8-638] synthesizing module 'pla_decode' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/pla_decode.v:17]
+INFO: [Synth 8-256] done synthesizing module 'pla_decode' (11#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/pla_decode.v:17]
+INFO: [Synth 8-638] synthesizing module 'resets' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/resets.v:32]
+INFO: [Synth 8-256] done synthesizing module 'resets' (12#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/resets.v:32]
+INFO: [Synth 8-638] synthesizing module 'memory_ifc' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/memory_ifc.v:32]
+INFO: [Synth 8-256] done synthesizing module 'memory_ifc' (13#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/memory_ifc.v:32]
+INFO: [Synth 8-638] synthesizing module 'sequencer' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/sequencer.v:32]
+INFO: [Synth 8-256] done synthesizing module 'sequencer' (14#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/sequencer.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_control' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_control.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_mux_4' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_4.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_mux_4' (15#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_4.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_mux_8' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_8.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_mux_8' (16#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_8.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_control' (17#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_control.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_select' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_select.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_select' (18#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_select.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_flags' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_flags.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_mux_2' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_2.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_mux_2' (19#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_2.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_flags' (20#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_flags.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_core' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_core.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_slice' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_slice.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_slice' (21#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_slice.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_core' (22#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_core.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_bit_select' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_bit_select.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_bit_select' (23#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_bit_select.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_shifter_core' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_shifter_core.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_shifter_core' (24#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_shifter_core.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_mux_2z' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_2z.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_mux_2z' (25#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_2z.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_mux_3z' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_3z.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_mux_3z' (26#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_mux_3z.v:32]
+INFO: [Synth 8-638] synthesizing module 'alu_prep_daa' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_prep_daa.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu_prep_daa' (27#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu_prep_daa.v:32]
+INFO: [Synth 8-256] done synthesizing module 'alu' (28#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/alu.v:32]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_file.v:32]
+INFO: [Synth 8-638] synthesizing module 'reg_latch' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_latch.v:32]
+INFO: [Synth 8-256] done synthesizing module 'reg_latch' (29#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_latch.v:32]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (30#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_file.v:32]
+INFO: [Synth 8-638] synthesizing module 'reg_control' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_control.v:32]
+INFO: [Synth 8-256] done synthesizing module 'reg_control' (31#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/reg_control.v:32]
+INFO: [Synth 8-638] synthesizing module 'address_latch' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_latch.v:32]
+INFO: [Synth 8-638] synthesizing module 'address_mux' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_mux.v:32]
+INFO: [Synth 8-256] done synthesizing module 'address_mux' (32#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_mux.v:32]
+INFO: [Synth 8-638] synthesizing module 'inc_dec' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/inc_dec.v:32]
+INFO: [Synth 8-638] synthesizing module 'inc_dec_2bit' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/inc_dec_2bit.v:32]
+INFO: [Synth 8-256] done synthesizing module 'inc_dec_2bit' (33#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/inc_dec_2bit.v:32]
+INFO: [Synth 8-256] done synthesizing module 'inc_dec' (34#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/inc_dec.v:32]
+INFO: [Synth 8-256] done synthesizing module 'address_latch' (35#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_latch.v:32]
+INFO: [Synth 8-638] synthesizing module 'bus_control' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/bus_control.v:32]
+INFO: [Synth 8-256] done synthesizing module 'bus_control' (36#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/bus_control.v:32]
+INFO: [Synth 8-638] synthesizing module 'bus_switch' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/bus_switch.v:25]
+INFO: [Synth 8-256] done synthesizing module 'bus_switch' (37#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/bus_switch.v:25]
+INFO: [Synth 8-638] synthesizing module 'data_switch' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_switch.v:32]
+INFO: [Synth 8-256] done synthesizing module 'data_switch' (38#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_switch.v:32]
+INFO: [Synth 8-638] synthesizing module 'data_switch_mask' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_switch_mask.v:32]
+INFO: [Synth 8-256] done synthesizing module 'data_switch_mask' (39#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_switch_mask.v:32]
+INFO: [Synth 8-638] synthesizing module 'address_pins' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_pins.v:32]
+INFO: [Synth 8-256] done synthesizing module 'address_pins' (40#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/address_pins.v:32]
+INFO: [Synth 8-638] synthesizing module 'data_pins' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_pins.v:32]
+INFO: [Synth 8-256] done synthesizing module 'data_pins' (41#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/data_pins.v:32]
+INFO: [Synth 8-638] synthesizing module 'control_pins_n' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/control_pins_n.v:32]
+INFO: [Synth 8-256] done synthesizing module 'control_pins_n' (42#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/control_pins_n.v:32]
+INFO: [Synth 8-256] done synthesizing module 'z80_top_direct_n' (43#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/z80/z80_top_direct_n.v:19]
+WARNING: [Synth 8-350] instance 'z80' of module 'z80_top_direct_n' requires 16 connections, but only 15 given [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:63]
+INFO: [Synth 8-638] synthesizing module 'DMA_top_wrapper' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_top/hdl/DMA_top_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'DMA_top' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_top/hdl/DMA_top.v:13]
+INFO: [Synth 8-638] synthesizing module 'DMA_wrapper' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'DMA' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:57]
+WARNING: [Synth 8-3848] Net Z80_busack in module/entity DMA does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:32]
+WARNING: [Synth 8-3848] Net VDP_UDS_N in module/entity DMA does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:35]
+WARNING: [Synth 8-3848] Net VDP_LDS_N in module/entity DMA does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:35]
+WARNING: [Synth 8-3848] Net HINT_ACK in module/entity DMA does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:35]
+WARNING: [Synth 8-3848] Net VINT_TG68_ACK in module/entity DMA does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:35]
+INFO: [Synth 8-256] done synthesizing module 'DMA' (44#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA.sv:23]
+WARNING: [Synth 8-350] instance 'inst' of module 'DMA' requires 42 connections, but only 41 given [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_wrapper.v:99]
+INFO: [Synth 8-256] done synthesizing module 'DMA_wrapper' (45#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'DMA_RAM_M68' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/DMA_RAM_M68_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DMA_RAM_M68' (46#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/DMA_RAM_M68_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'DMA_RAM_Z80' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/DMA_RAM_Z80_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DMA_RAM_Z80' (47#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/DMA_RAM_Z80_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DMA_top' (48#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_top/hdl/DMA_top.v:13]
+INFO: [Synth 8-256] done synthesizing module 'DMA_top_wrapper' (49#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/DMA/DMA_top/hdl/DMA_top_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'TG68' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68.vhd:64]
+INFO: [Synth 8-3491] module 'TG68_fast' declared at '/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:74' bound to instance 'TG68_fast_inst' of component 'TG68_fast' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'TG68_fast' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:93]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:1676]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:2901]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:2927]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:2954]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:3028]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:3038]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:3238]
+WARNING: [Synth 8-3936] Found unconnected internal register 'movem_muxc_reg' and it is trimmed from '2' to '1' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:3196]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rf_dest_addr_reg' and it is trimmed from '7' to '5' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:383]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rf_source_addr_reg' and it is trimmed from '7' to '5' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:384]
+INFO: [Synth 8-256] done synthesizing module 'TG68_fast' (50#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:93]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68.vhd:175]
+INFO: [Synth 8-256] done synthesizing module 'TG68' (51#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68.vhd:64]
+WARNING: [Synth 8-350] instance 'M68' of module 'TG68' requires 15 connections, but only 13 given [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+INFO: [Synth 8-638] synthesizing module 'VRAM' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/VRAM_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'VRAM' (52#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/gen_final/gen_final.runs/synth_1/.Xil/Vivado-18701-columbus.andrew.cmu.edu/realtime/VRAM_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'vdp' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'vdp_colinfo' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_colinfo.vhd:58]
+	Parameter address_reg_b bound to: CLOCK0 - type: string 
+	Parameter clock_enable_input_a bound to: BYPASS - type: string 
+	Parameter clock_enable_input_b bound to: BYPASS - type: string 
+	Parameter clock_enable_output_a bound to: BYPASS - type: string 
+	Parameter clock_enable_output_b bound to: BYPASS - type: string 
+	Parameter indata_reg_b bound to: CLOCK0 - type: string 
+	Parameter intended_device_family bound to: Cyclone II - type: string 
+	Parameter lpm_type bound to: altsyncram - type: string 
+	Parameter numwords_a bound to: 512 - type: integer 
+	Parameter numwords_b bound to: 512 - type: integer 
+	Parameter operation_mode bound to: BIDIR_DUAL_PORT - type: string 
+	Parameter outdata_aclr_a bound to: NONE - type: string 
+	Parameter outdata_aclr_b bound to: NONE - type: string 
+	Parameter outdata_reg_a bound to: CLOCK0 - type: string 
+	Parameter outdata_reg_b bound to: CLOCK0 - type: string 
+	Parameter power_up_uninitialized bound to: FALSE - type: string 
+	Parameter read_during_write_mode_mixed_ports bound to: DONT_CARE - type: string 
+	Parameter widthad_a bound to: 9 - type: integer 
+	Parameter widthad_b bound to: 9 - type: integer 
+	Parameter width_a bound to: 7 - type: integer 
+	Parameter width_b bound to: 7 - type: integer 
+	Parameter width_byteena_a bound to: 1 - type: integer 
+	Parameter width_byteena_b bound to: 1 - type: integer 
+	Parameter wrcontrol_wraddress_reg_b bound to: CLOCK0 - type: string 
+INFO: [Synth 8-637] synthesizing blackbox instance 'altsyncram_component' of component 'altsyncram' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_colinfo.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'vdp_colinfo' (53#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_colinfo.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'vdp_objinfo' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_objinfo.vhd:55]
+	Parameter address_reg_b bound to: CLOCK0 - type: string 
+	Parameter clock_enable_input_a bound to: BYPASS - type: string 
+	Parameter clock_enable_input_b bound to: BYPASS - type: string 
+	Parameter clock_enable_output_a bound to: BYPASS - type: string 
+	Parameter clock_enable_output_b bound to: BYPASS - type: string 
+	Parameter intended_device_family bound to: Cyclone II - type: string 
+	Parameter lpm_type bound to: altsyncram - type: string 
+	Parameter numwords_a bound to: 512 - type: integer 
+	Parameter numwords_b bound to: 512 - type: integer 
+	Parameter operation_mode bound to: DUAL_PORT - type: string 
+	Parameter outdata_aclr_b bound to: NONE - type: string 
+	Parameter outdata_reg_b bound to: CLOCK0 - type: string 
+	Parameter power_up_uninitialized bound to: FALSE - type: string 
+	Parameter read_during_write_mode_mixed_ports bound to: DONT_CARE - type: string 
+	Parameter widthad_a bound to: 9 - type: integer 
+	Parameter widthad_b bound to: 9 - type: integer 
+	Parameter width_a bound to: 16 - type: integer 
+	Parameter width_b bound to: 16 - type: integer 
+	Parameter width_byteena_a bound to: 1 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'altsyncram_component' of component 'altsyncram' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_objinfo.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'vdp_objinfo' (54#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp_objinfo.vhd:55]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1100]
+INFO: [Synth 8-226] default block is never used [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1308]
+WARNING: [Synth 8-3848] Net BGA_COLINFO_D_B in module/entity vdp does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:411]
+WARNING: [Synth 8-3848] Net BGB_COLINFO_D_B in module/entity vdp does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:372]
+INFO: [Synth 8-256] done synthesizing module 'vdp' (55#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:99]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:122]
+INFO: [Synth 8-155] case statement is not full and has no default [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:136]
+WARNING: [Synth 8-87] always_comb on 'VRAM_DTACK_N_reg' did not result in combinational logic [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:87]
+WARNING: [Synth 8-3848] Net state in module/entity sega_genesis_top does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:94]
+WARNING: [Synth 8-3848] Net vdp_hint_ack in module/entity sega_genesis_top does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:18]
+WARNING: [Synth 8-3848] Net vint_t80 in module/entity sega_genesis_top does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:49]
+WARNING: [Synth 8-3848] Net vint_tg68 in module/entity sega_genesis_top does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:50]
+WARNING: [Synth 8-3848] Net M68_CLK in module/entity sega_genesis_top does not have driver. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:61]
+INFO: [Synth 8-256] done synthesizing module 'sega_genesis_top' (56#1) [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1292.250 ; gain = 382.949 ; free physical = 6963 ; free virtual = 18692
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[6] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[5] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[4] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[3] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bgb_ci:data_b[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:576]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[6] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[5] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[4] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[3] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin bga_ci:data_b[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:590]
+WARNING: [Synth 8-3295] tying undriven pin rom:clk to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:61]
+WARNING: [Synth 8-3295] tying undriven pin rom:rst_n to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:61]
+WARNING: [Synth 8-3295] tying undriven pin z80:nWAIT to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:63]
+WARNING: [Synth 8-3295] tying undriven pin z80:nINT to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:63]
+WARNING: [Synth 8-3295] tying undriven pin z80:nNMI to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:63]
+WARNING: [Synth 8-3295] tying undriven pin z80:nBUSRQ to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:63]
+WARNING: [Synth 8-3295] tying undriven pin dma:HINT to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[31] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[30] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[29] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[28] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[27] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[26] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[25] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[24] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[23] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[22] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[21] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[20] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[19] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[18] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[17] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[16] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[15] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[14] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[13] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[12] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[11] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[10] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[9] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[8] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[7] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[6] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[5] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[4] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[3] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_addr[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_as to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[15] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[14] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[13] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[12] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[11] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[10] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[9] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[8] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[7] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[6] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[5] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[4] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[3] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_data_out[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_lds to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_rw to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:M68_uds to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:VINT_T80 to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:VINT_TG68 to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[15] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[14] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[13] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[12] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[11] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[10] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[9] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[8] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[7] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[6] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[5] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[4] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[3] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_addr[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_mreq to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_rd to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:Z80_wr to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin dma:clk to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:67]
+WARNING: [Synth 8-3295] tying undriven pin M68:clk to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+WARNING: [Synth 8-3295] tying undriven pin M68:IPL[2] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+WARNING: [Synth 8-3295] tying undriven pin M68:IPL[1] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+WARNING: [Synth 8-3295] tying undriven pin M68:IPL[0] to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+WARNING: [Synth 8-3295] tying undriven pin M68:enaRDreg to constant 0 [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:76]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 1292.250 ; gain = 382.949 ; free physical = 6965 ; free virtual = 18694
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc:212]
+Finished Parsing XDC File [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sega_genesis_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1600.391 ; gain = 0.000 ; free physical = 6785 ; free virtual = 18510
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6783 ; free virtual = 18509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6783 ; free virtual = 18509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 156 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 156 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 157 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 157 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 158 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 158 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 159 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 159 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 161 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 161 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 162 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 162 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 163 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 163 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 164 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 164 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 166 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 166 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 167 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 167 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 168 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 168 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 169 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 169 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 171 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 171 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 172 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 172 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6784 ; free virtual = 18509
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'DMA'
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_A" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_A" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "RAM_16_en" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "RAM_16_en" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "RAM_16_data_in" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "Z80_local" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:3144]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/68k/TG68_fast.vhd:421]
+INFO: [Synth 8-5544] ROM "get_ea_now" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trap_1010" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trap_1111" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "trap_trap" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "trap_illegal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "set_exec_ROT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get_ea_now" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trap_1010" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trap_1111" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "trap_trap" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "trap_illegal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "set_exec_ROT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datatype" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datatype" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datatype" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datatype" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addsub_b" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "set_vectoraddr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "setaddrlong" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "memaddr_a" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "setdisp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "setdispbrief" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "setdispbyte" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "setstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "setstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "setstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "setstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "set_TG68_PC_dec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_micro_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_micro_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_micro_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "setnextpass" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "setgetbrief" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "writeSR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Flags" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flag_z" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mulu_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "TG68_PC_nop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'SCOL_CLR_reg' into 'SOVR_CLR_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:704]
+INFO: [Synth 8-4471] merging register 'VINT_T80_SET_reg' into 'VINT_TG68_PENDING_SET_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1949]
+INFO: [Synth 8-4471] merging register 'FF_VBUS_LDS_N_reg' into 'FF_VBUS_UDS_N_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:2362]
+INFO: [Synth 8-4471] merging register 'OBJ_SZ_LINK_ADDR_RD_reg[8:0]' into 'OBJ_Y_ADDR_RD_reg[8:0]' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:631]
+INFO: [Synth 8-4471] merging register 'BGA_COLINFO_ADDR_B_reg[8:0]' into 'BGB_COLINFO_ADDR_B_reg[8:0]' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:593]
+INFO: [Synth 8-4471] merging register 'OBJ_COLINFO_ADDR_B_reg[8:0]' into 'BGB_COLINFO_ADDR_B_reg[8:0]' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:607]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1822]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1814]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:909]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1352]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:1137]
+WARNING: [Synth 8-3936] Found unconnected internal register 'T_COLOR_reg' and it is trimmed from '16' to '12' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:2204]
+WARNING: [Synth 8-3936] Found unconnected internal register 'DT_DMAF_DATA_reg' and it is trimmed from '16' to '8' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:737]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SP1_VRAM_DO_reg' and it is trimmed from '16' to '12' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:987]
+WARNING: [Synth 8-3936] Found unconnected internal register 'REG_LATCH_reg' and it is trimmed from '16' to '13' bits. [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:770]
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "REG_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "BGB_Y" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FF_R" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OBJ_COLINFO_WE_B" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGB_COLINFO_ADDR_B" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "T_COLOR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGB_Y" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FF_R" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OBJ_COLINFO_WE_B" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGB_COLINFO_ADDR_B" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "T_COLOR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "VMC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DTC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CODE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ADDR_LATCH" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGBC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGAC" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BGA_Y" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP1C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP1_SEL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SP2C" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OBJ_Y_OFS" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OBJ_Y_OFS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "OBJ_X_OFS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "HV_HCNT" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'BGAC_reg' in module 'vdp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 | 00000000000000000000000000000000
+                Z80_READ |                       0000000010 | 00000000000000000000000000000011
+               Z80_WRITE |                       0000000100 | 00000000000000000000000000000100
+                VDP_READ |                       0000001000 | 00000000000000000000000000000101
+                M68_READ |                       0000010000 | 00000000000000000000000000000001
+     M68_READ_DTACKHOLD1 |                       0000100000 | 00000000000000000000000000001000
+     M68_READ_DTACKHOLD2 |                       0001000000 | 00000000000000000000000000001001
+               VDP_WRITE |                       0010000000 | 00000000000000000000000000000110
+               M68_WRITE |                       0100000000 | 00000000000000000000000000000010
+                    HOLD |                       1000000000 | 00000000000000000000000000001010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'DMA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+               bgac_init |                              000 |                              000
+              bgac_hs_rd |                              001 |                              001
+             bgac_calc_y |                              010 |                              010
+          bgac_calc_base |                              011 |                              011
+            bgac_base_rd |                              100 |                              100
+               bgac_loop |                              101 |                              101
+            bgac_tile_rd |                              110 |                              110
+                  iSTATE |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BGAC_reg' using encoding 'sequential' in module 'vdp'
+WARNING: [Synth 8-327] inferring latch for variable 'FF_VBUS_DMA_REQ_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:2359]
+WARNING: [Synth 8-327] inferring latch for variable 'OBJ_COLINFO_D_B_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/VDP_vhdl/vdp.vhd:610]
+WARNING: [Synth 8-327] inferring latch for variable 'VRAM_DTACK_N_reg' [/afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/SegaGenesis.sv:87]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6787 ; free virtual = 18513
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sega_genesis_top__GB0 |           1|     26876|
+|2     |sega_genesis_top__GB1 |           1|     25364|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     34 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 10    
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   3 Input      6 Bit       Adders := 2     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 44    
+	   5 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 161   
+	               15 Bit    Registers := 7     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 14    
+	                8 Bit    Registers := 58    
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 226   
++---RAMs : 
+	              15K Bit         RAMs := 2     
+	              272 Bit         RAMs := 2     
+	               64 Bit         RAMs := 2     
+	               12 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 34    
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 56    
+	   4 Input     16 Bit        Muxes := 1     
+	  30 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 14    
+	   8 Input     15 Bit        Muxes := 2     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 7     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 9     
+	   8 Input     10 Bit        Muxes := 4     
+	  27 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 18    
+	  16 Input      9 Bit        Muxes := 5     
+	   4 Input      9 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 17    
+	   8 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 3     
+	  30 Input      8 Bit        Muxes := 1     
+	  69 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 18    
+	  16 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 23    
+	  13 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 38    
+	   5 Input      5 Bit        Muxes := 3     
+	   7 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 3     
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 29    
+	   5 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 3     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   3 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 3     
+	  69 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 2     
+	  30 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 68    
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 8     
+	   6 Input      2 Bit        Muxes := 2     
+	  69 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	  30 Input      2 Bit        Muxes := 138   
+	   2 Input      1 Bit        Muxes := 688   
+	   7 Input      1 Bit        Muxes := 42    
+	  13 Input      1 Bit        Muxes := 65    
+	   4 Input      1 Bit        Muxes := 28    
+	   5 Input      1 Bit        Muxes := 29    
+	   6 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 149   
+	  69 Input      1 Bit        Muxes := 3     
+	  30 Input      1 Bit        Muxes := 34    
+	  12 Input      1 Bit        Muxes := 27    
+	  16 Input      1 Bit        Muxes := 19    
+	   8 Input      1 Bit        Muxes := 27    
+	  18 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sega_genesis_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module ROM_Handler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clk_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module decode_state 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module execute 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module interrupts 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 8     
+Module ir 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module resets 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module memory_ifc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 20    
+Module sequencer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 11    
+Module alu_control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
+Module alu_flags 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 10    
+Module alu_core 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module alu 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 5     
+Module reg_latch__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_latch 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module inc_dec_2bit__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec_2bit__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec_2bit__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec_2bit__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec_2bit__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec_2bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 19    
+Module address_latch 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module address_pins 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module data_pins 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module z80_top_direct_n 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module TG68_fast 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     34 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   3 Input      6 Bit       Adders := 2     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 54    
++---RAMs : 
+	              272 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 34    
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 32    
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12    
+	   8 Input      8 Bit        Muxes := 2     
+	  69 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 17    
+	  13 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 30    
+	   5 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 3     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	  69 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 67    
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 7     
+	   6 Input      2 Bit        Muxes := 2     
+	  69 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 304   
+	   7 Input      1 Bit        Muxes := 42    
+	  13 Input      1 Bit        Muxes := 65    
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 21    
+	   6 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 6     
+	  69 Input      1 Bit        Muxes := 3     
+Module TG68 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 11    
+Module vdp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 3     
+	   2 Input     15 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 10    
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 145   
+	               15 Bit    Registers := 7     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 8     
+	                9 Bit    Registers := 14    
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 78    
++---RAMs : 
+	              15K Bit         RAMs := 2     
+	               64 Bit         RAMs := 2     
+	               12 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 20    
+	  30 Input     16 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 14    
+	   8 Input     15 Bit        Muxes := 2     
+	  16 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 9     
+	   8 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 18    
+	  16 Input      9 Bit        Muxes := 5     
+	   4 Input      9 Bit        Muxes := 3     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	  30 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 14    
+	  16 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 7     
+	  16 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 20    
+	   4 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	  16 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	  30 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  30 Input      2 Bit        Muxes := 138   
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 339   
+	  30 Input      1 Bit        Muxes := 34    
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 27    
+	  16 Input      1 Bit        Muxes := 19    
+	   5 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 137   
+	   8 Input      1 Bit        Muxes := 27    
+	  18 Input      1 Bit        Muxes := 2     
+Module DMA 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  10 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	  27 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   3 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6787 ; free virtual = 18513
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "memaddr_a" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Flags" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "RAM_16_en" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "RAM_16_data_in" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "RAM_16_en" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_A" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_SEL" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "VDP_A" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6793 ; free virtual = 18519
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6793 ; free virtual = 18519
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sega_genesis_top__GB0 |           1|     28124|
+|2     |sega_genesis_top__GB1 |           1|     25850|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++----------------------+------------------+-----------+----------------------+-----------------+-------------------+
+|Module Name           | RTL Object       | Inference | Size (Depth x Width) | Primitives      | Hierarchical Name | 
++----------------------+------------------+-----------+----------------------+-----------------+-------------------+
+|sega_genesis_top__GB0 | regfile_high_reg | Implied   | 32 x 16              | RAM16X1D x 32   | TG68_fast/ram__7  | 
+|sega_genesis_top__GB0 | regfile_low_reg  | Implied   | 32 x 16              | RAM16X1D x 32   | TG68_fast/ram__8  | 
+|sega_genesis_top__GB1 | FIFO_ADDR_reg    | Implied   | 4 x 16               | RAM32M x 3      | vdp/ram__9        | 
+|sega_genesis_top__GB1 | FIFO_DATA_reg    | Implied   | 4 x 16               | RAM32M x 3      | vdp/ram__10       | 
+|sega_genesis_top__GB1 | LINE0_reg        | Implied   | 2 K x 9              | RAM64M x 81     | vdp/ram__11       | 
+|sega_genesis_top__GB1 | LINE1_reg        | Implied   | 2 K x 9              | RAM64M x 81     | vdp/ram__12       | 
+|sega_genesis_top__GB1 | FIFO_CODE_reg    | Implied   | 4 x 3                | RAM32M x 1      | vdp/ram__13       | 
++----------------------+------------------+-----------+----------------------+-----------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (FF_VBUS_DMA_REQ_reg) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[2][7] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[2][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[2][2] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[2][1] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[2][0] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][7] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][5] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][4] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][3] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][2] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[12][1] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[18][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[18][5] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[17][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[17][5] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[16][7] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[16][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[16][3] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[16][2] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[13][7] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[13][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[11][7] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[11][6] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[11][5] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[11][4] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\REG_reg[11][3] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[0][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[1][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[2][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[3][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[4][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[5][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[6][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[7][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[8][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[9][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[10][10] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][15] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][14] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][13] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][12] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][11] ) is unused and will be removed from module vdp.
+WARNING: [Synth 8-3332] Sequential element (\VSRAM_reg[11][10] ) is unused and will be removed from module vdp.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_TILEBASE_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_Y_ADDR_WR_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_SZ_LINK_D_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_Y_ADDR_RD_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_SZ_LINK_ADDR_WR_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\SP1_VRAM_ADDR_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_data_in_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\RAM_8_addr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_VBUS_DATA_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_DI_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_A_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\dma/DMA_top_i/DMA_wrapper_0/inst /\VDP_A_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\OBJ_COLINFO_D_B_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\FF_VGA_B_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\FF_VGA_G_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\FF_VGA_R_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\BGA_X_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\BGB_X_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\BGA_Y_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\BGB_Y_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_DMAF_DATA_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\REG_LATCH_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_DATA_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_CODE_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_CODE_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_FF_CODE_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_RD_CODE_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/video/\DT_DMAV_DATA_reg[1] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6745 ; free virtual = 18471
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6745 ; free virtual = 18471
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sega_genesis_top__GB0 |           1|      9270|
+|2     |sega_genesis_top__GB1 |           1|      6164|
++------+----------------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6745 ; free virtual = 18471
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 7 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 7 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 156 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 156 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 157 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 157 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 158 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 158 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 159 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 159 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 161 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 161 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 162 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 162 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 163 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 163 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 164 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 164 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 166 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 166 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 167 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 167 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 168 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 168 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 169 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 169 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 171 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 171 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 172 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 172 of file /afs/ece.cmu.edu/usr/sjurcsek/Private/18545/final/545_Melons/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6744 ; free virtual = 18470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:27 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6743 ; free virtual = 18470
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |sega_genesis_top__GB0 |           1|      9270|
+|2     |sega_genesis_top__GB1 |           1|      6164|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/OBJ_PAT_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/OBJ_PAT_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGA_TILEBASE_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\video/BGB_TILEBASE_reg[9] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:29 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'sega_genesis_top' to reference 'ROM_Handler_Top_wrapper' which has no pins
+WARNING: [Synth 8-115] binding instance 'i_0' in module 'ROM_Handler_Top_wrapper' to reference 'ROM_Handler_Top' which has no pins
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |VRAM          |         1|
+|2     |DMA_RAM_M68   |         1|
+|3     |DMA_RAM_Z80   |         1|
+|4     |Game_ROM      |         1|
+|5     |altsyncram    |         5|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |DMA_RAM_M68          |     1|
+|2     |DMA_RAM_Z80          |     1|
+|3     |Game_ROM             |     1|
+|4     |VRAM                 |     1|
+|5     |altsyncram_bbox      |     1|
+|6     |altsyncram_bbox_0    |     1|
+|7     |altsyncram_bbox_0__1 |     1|
+|8     |altsyncram_bbox__1   |     1|
+|9     |altsyncram_bbox__2   |     1|
+|10    |BUFG                 |     2|
+|11    |CARRY4               |    29|
+|12    |LUT1                 |    78|
+|13    |LUT2                 |    97|
+|14    |LUT3                 |    69|
+|15    |LUT4                 |    64|
+|16    |LUT5                 |    91|
+|17    |LUT6                 |   311|
+|18    |MUXCY_L              |    11|
+|19    |MUXF7                |    42|
+|20    |RAM32M               |     3|
+|21    |RAM64M               |    54|
+|22    |XORCY                |    12|
+|23    |FDCE                 |   191|
+|24    |FDPE                 |     7|
+|25    |FDRE                 |   241|
+|26    |IBUF                 |     2|
+|27    |OBUF                 |    14|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+----------------------+------------------------+------+
+|      |Instance              |Module                  |Cells |
++------+----------------------+------------------------+------+
+|1     |top                   |                        |  1448|
+|2     |  dma                 |DMA_top_wrapper         |    45|
+|3     |    DMA_top_i         |DMA_top                 |    45|
+|4     |      DMA_wrapper_0   |DMA_wrapper             |    21|
+|5     |        inst          |DMA                     |    21|
+|6     |  rom                 |ROM_Handler_Top_wrapper |    21|
+|7     |    ROM_Handler_Top_i |ROM_Handler_Top         |    21|
+|8     |      ROM_Handler_0   |ROM_Handler             |     5|
+|9     |  video               |vdp                     |  1335|
+|10    |    bga_ci            |vdp_colinfo             |    14|
+|11    |    bgb_ci            |vdp_colinfo_0           |    14|
+|12    |    obj_ci            |vdp_colinfo_1           |    18|
+|13    |    obj_oi_sl         |vdp_objinfo             |    16|
+|14    |    obj_oi_y          |vdp_objinfo_2           |    28|
++------+----------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3427 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:18 . Memory (MB): peak = 1600.391 ; gain = 266.426 ; free physical = 6719 ; free virtual = 18445
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 1600.391 ; gain = 691.090 ; free physical = 6719 ; free virtual = 18445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sega_genesis_top' is not ideal for floorplanning, since the cellview 'vdp' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 3 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 54 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+465 Infos, 268 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:28 . Memory (MB): peak = 1612.633 ; gain = 594.812 ; free physical = 6719 ; free virtual = 18445
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1644.652 ; gain = 0.000 ; free physical = 6718 ; free virtual = 18445
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  4 19:16:56 2016...
